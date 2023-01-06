@@ -47,9 +47,9 @@ class PDFController extends Controller
         File::delete($filename);
         $pdf = \PDF::loadView('pdf.report-system', $data);
         $pdf->setOption('enable-javascript', true);
-        // $pdf->setOption('javascript-delay', 5000);
-        $pdf->setOption('enable-smart-shrinking', true);
-        $pdf->setOption('no-stop-slow-scripts', true);
+        $pdf->setOption('javascript-delay', 5000);
+        // $pdf->setOption('enable-smart-shrinking', true);
+        // $pdf->setOption('no-stop-slow-scripts', true);
         $pdf->setOption('margin-top', 10);
         $pdf->setOption('margin-bottom', 10);
         $pdf->setOption('margin-left', 0);
