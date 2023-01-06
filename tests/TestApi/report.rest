@@ -1,0 +1,1563 @@
+POST http://localhost:8000/api/generate-report-systems
+Content-Type: application/json
+
+{
+    "novaJson": [
+	{
+		"idPerson": 55,
+		"idSystem": 1,
+		"nameSystem": "novaRes",
+		"sampligpoints": [
+			{
+				"idSubsystem": 1,
+				"nameSubsystem": "Subsistema uno",
+				"parameters": [
+					{
+						"idParameter": 4,
+						"nameParameter": " pH",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 14,
+								"nameSamplingpoint": "Punto de Muestreo 3",
+								"factor": 1,
+								"unit": "PTTX",
+								"value": "45",
+								"codeValue": "MAX",
+								"finalResult": 1,
+								"validRange": true,
+								"valueUser": 1,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 1,
+								"unit": "PTTX",
+								"value": "45",
+								"codeValue": "MAX",
+								"finalResult": 2,
+								"validRange": true,
+								"valueUser": 2,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 6,
+								"nameSamplingpoint": "Punto de Muestreo 1",
+								"factor": 1,
+								"unit": "PTTX",
+								"value": "12",
+								"codeValue": "MAX",
+								"finalResult": 3,
+								"validRange": true,
+								"valueUser": 3,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 7,
+						"nameParameter": " ALK FENOL, ppm CaCO3",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 14,
+								"nameSamplingpoint": "Punto de Muestreo 3",
+								"factor": 7,
+								"unit": "TRD",
+								"value": "34",
+								"codeValue": "MIN",
+								"finalResult": 35,
+								"validRange": true,
+								"valueUser": 5,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 7,
+								"unit": "TRD",
+								"value": "56",
+								"codeValue": "MAX",
+								"finalResult": 42,
+								"validRange": true,
+								"valueUser": 6,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 6,
+								"nameSamplingpoint": "Punto de Muestreo 1",
+								"factor": 7,
+								"unit": "TRD",
+								"value": "23",
+								"codeValue": "MIN",
+								"finalResult": 49,
+								"validRange": true,
+								"valueUser": 7,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 8,
+						"nameParameter": " ALK TOTAL, ppm CaCO3",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 14,
+								"nameSamplingpoint": "Punto de Muestreo 3",
+								"factor": 3,
+								"unit": "MM",
+								"value": "78",
+								"codeValue": "MAX",
+								"finalResult": 27,
+								"validRange": true,
+								"valueUser": 9,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 3,
+								"unit": "MM",
+								"value": "33",
+								"codeValue": "MIN",
+								"finalResult": 0,
+								"validRange": false,
+								"valueUser": 0,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 6,
+								"nameSamplingpoint": "Punto de Muestreo 1",
+								"factor": 3,
+								"unit": "MM",
+								"value": "25",
+								"codeValue": "MAX",
+								"finalResult": 3,
+								"validRange": true,
+								"valueUser": 1,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 10,
+						"nameParameter": " ALK OH, ppm CaCO3",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 4,
+								"unit": "YUT",
+								"value": "67",
+								"codeValue": "MAX",
+								"finalResult": 12,
+								"validRange": true,
+								"valueUser": 3,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 6,
+								"nameSamplingpoint": "Punto de Muestreo 1",
+								"factor": 4,
+								"unit": "YUT",
+								"value": "12,56",
+								"codeValue": "ENT",
+								"finalResult": 16,
+								"validRange": true,
+								"valueUser": 4,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 14,
+								"nameSamplingpoint": "Punto de Muestreo 3",
+								"factor": 4,
+								"unit": "YUT",
+								"value": "65",
+								"codeValue": "MAX",
+								"finalResult": 20,
+								"validRange": true,
+								"valueUser": 5,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 12,
+						"nameParameter": " Dureza total, ppm",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 6,
+								"nameSamplingpoint": "Punto de Muestreo 1",
+								"factor": 10,
+								"unit": "PTTX",
+								"value": "23",
+								"codeValue": "MAX",
+								"finalResult": 70,
+								"validRange": false,
+								"valueUser": 7,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 14,
+								"nameSamplingpoint": "Punto de Muestreo 3",
+								"factor": 10,
+								"unit": "PTTX",
+								"value": "56",
+								"codeValue": "MIN",
+								"finalResult": 80,
+								"validRange": true,
+								"valueUser": 8,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 10,
+								"unit": "PTTX",
+								"value": "67",
+								"codeValue": "MAX",
+								"finalResult": 90,
+								"validRange": false,
+								"valueUser": 9,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 15,
+						"nameParameter": "Sílice, ppm SiO2",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 14,
+								"nameSamplingpoint": "Punto de Muestreo 3",
+								"factor": 78,
+								"unit": "TRD",
+								"value": "12,56",
+								"codeValue": "ENT",
+								"finalResult": 78,
+								"validRange": false,
+								"valueUser": 1,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 78,
+								"unit": "TRD",
+								"value": "66",
+								"codeValue": "MIN",
+								"finalResult": 156,
+								"validRange": true,
+								"valueUser": 2,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 6,
+								"nameSamplingpoint": "Punto de Muestreo 1",
+								"factor": 78,
+								"unit": "TRD",
+								"value": "35",
+								"codeValue": "MIN",
+								"finalResult": 234,
+								"validRange": true,
+								"valueUser": 3,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 16,
+						"nameParameter": " Conductividad, us/cm",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 14,
+								"nameSamplingpoint": "Punto de Muestreo 3",
+								"factor": 7,
+								"unit": "MM",
+								"value": "56",
+								"codeValue": "MIN",
+								"finalResult": 35,
+								"validRange": false,
+								"valueUser": 5,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 7,
+								"unit": "MM",
+								"value": "56",
+								"codeValue": "MIN",
+								"finalResult": 42,
+								"validRange": false,
+								"valueUser": 6,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 6,
+								"nameSamplingpoint": "Punto de Muestreo 1",
+								"factor": 7,
+								"unit": "MM",
+								"value": "67",
+								"codeValue": "MAX",
+								"finalResult": 49,
+								"validRange": true,
+								"valueUser": 7,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 19,
+						"nameParameter": "S.T.D, ppm",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 14,
+								"nameSamplingpoint": "Punto de Muestreo 3",
+								"factor": 40,
+								"unit": "YUT",
+								"value": "85",
+								"codeValue": "MAX",
+								"finalResult": 360,
+								"validRange": false,
+								"valueUser": 9,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 40,
+								"unit": "YUT",
+								"value": "77",
+								"codeValue": "MAX",
+								"finalResult": 0,
+								"validRange": true,
+								"valueUser": 0,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 6,
+								"nameSamplingpoint": "Punto de Muestreo 1",
+								"factor": 40,
+								"unit": "YUT",
+								"value": "45",
+								"codeValue": "MIN",
+								"finalResult": 40,
+								"validRange": false,
+								"valueUser": 1,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 22,
+						"nameParameter": "Polímero, ppm",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 14,
+								"nameSamplingpoint": "Punto de Muestreo 3",
+								"factor": 5,
+								"unit": "PTTX",
+								"value": "54",
+								"codeValue": "MIN",
+								"finalResult": 15,
+								"validRange": false,
+								"valueUser": 3,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 5,
+								"unit": "PTTX",
+								"value": "56",
+								"codeValue": "MIN",
+								"finalResult": 20,
+								"validRange": false,
+								"valueUser": 4,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 6,
+								"nameSamplingpoint": "Punto de Muestreo 1",
+								"factor": 5,
+								"unit": "PTTX",
+								"value": "34",
+								"codeValue": "MAX",
+								"finalResult": 25,
+								"validRange": true,
+								"valueUser": 5,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 23,
+						"nameParameter": "Fosfatos, ppm PO4",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 5,
+								"unit": "TRD",
+								"value": "45",
+								"codeValue": "MAX",
+								"finalResult": 35,
+								"validRange": true,
+								"valueUser": 7,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 6,
+								"nameSamplingpoint": "Punto de Muestreo 1",
+								"factor": 5,
+								"unit": "TRD",
+								"value": "23",
+								"codeValue": "MIN",
+								"finalResult": 40,
+								"validRange": true,
+								"valueUser": 8,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 14,
+								"nameSamplingpoint": "Punto de Muestreo 3",
+								"factor": 5,
+								"unit": "TRD",
+								"value": "45",
+								"codeValue": "MAX",
+								"finalResult": 45,
+								"validRange": true,
+								"valueUser": 9,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 24,
+						"nameParameter": "Sulfitos, ppm SO3",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 6,
+								"nameSamplingpoint": "Punto de Muestreo 1",
+								"factor": 54,
+								"unit": "MM",
+								"value": "34",
+								"codeValue": "MAX",
+								"finalResult": 54,
+								"validRange": false,
+								"valueUser": 1,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 14,
+								"nameSamplingpoint": "Punto de Muestreo 3",
+								"factor": 54,
+								"unit": "MM",
+								"value": "90,45",
+								"codeValue": "ENT",
+								"finalResult": 108,
+								"validRange": false,
+								"valueUser": 2,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 54,
+								"unit": "MM",
+								"value": "45",
+								"codeValue": "MAX",
+								"finalResult": 162,
+								"validRange": false,
+								"valueUser": 3,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 25,
+						"nameParameter": "Hierro total, ppm ",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 6,
+								"nameSamplingpoint": "Punto de Muestreo 1",
+								"factor": 4,
+								"unit": "PTUX",
+								"value": "67,12",
+								"codeValue": "ENT",
+								"finalResult": 20,
+								"validRange": true,
+								"valueUser": 5,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 14,
+								"nameSamplingpoint": "Punto de Muestreo 3",
+								"factor": 4,
+								"unit": "PTUX",
+								"value": "34",
+								"codeValue": "MAX",
+								"finalResult": 24,
+								"validRange": true,
+								"valueUser": 6,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 4,
+								"unit": "PTUX",
+								"value": "56",
+								"codeValue": "MIN",
+								"finalResult": 28,
+								"validRange": false,
+								"valueUser": 7,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 26,
+						"nameParameter": "Cloruros, ppm Cl",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 14,
+								"nameSamplingpoint": "Punto de Muestreo 3",
+								"factor": 34,
+								"unit": "mvs",
+								"value": "56",
+								"codeValue": "MAX",
+								"finalResult": 306,
+								"validRange": false,
+								"valueUser": 9,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 34,
+								"unit": "mvs",
+								"value": "45",
+								"codeValue": "MAX",
+								"finalResult": 0,
+								"validRange": true,
+								"valueUser": 0,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 6,
+								"nameSamplingpoint": "Punto de Muestreo 1",
+								"factor": 34,
+								"unit": "mvs",
+								"value": "45",
+								"codeValue": "MAX",
+								"finalResult": 34,
+								"validRange": true,
+								"valueUser": 1,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 27,
+						"nameParameter": "Temperatura",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 14,
+								"nameSamplingpoint": "Punto de Muestreo 3",
+								"factor": 1,
+								"unit": "°c",
+								"value": "50",
+								"codeValue": "MAX",
+								"finalResult": 3,
+								"validRange": true,
+								"valueUser": 3,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 1,
+								"unit": "°c",
+								"value": "50",
+								"codeValue": "MAX",
+								"finalResult": 4,
+								"validRange": true,
+								"valueUser": 4,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 6,
+								"nameSamplingpoint": "Punto de Muestreo 1",
+								"factor": 1,
+								"unit": "°c",
+								"value": "50",
+								"codeValue": "MAX",
+								"finalResult": 5,
+								"validRange": true,
+								"valueUser": 5,
+								"isCompleted": true
+							}
+						]
+					}
+				]
+			},
+			{
+				"idSubsystem": 2,
+				"nameSubsystem": "Subsistema dos",
+				"parameters": [
+					{
+						"idParameter": 4,
+						"nameParameter": " pH",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 1,
+								"unit": "PTTX",
+								"value": "45",
+								"codeValue": "MAX",
+								"finalResult": 4,
+								"validRange": true,
+								"valueUser": 4,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 7,
+						"nameParameter": " ALK FENOL, ppm CaCO3",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 7,
+								"unit": "TRD",
+								"value": "56",
+								"codeValue": "MAX",
+								"finalResult": 56,
+								"validRange": true,
+								"valueUser": 8,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 8,
+						"nameParameter": " ALK TOTAL, ppm CaCO3",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 3,
+								"unit": "MM",
+								"value": "33",
+								"codeValue": "MIN",
+								"finalResult": 6,
+								"validRange": false,
+								"valueUser": 2,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 10,
+						"nameParameter": " ALK OH, ppm CaCO3",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 4,
+								"unit": "YUT",
+								"value": "67",
+								"codeValue": "MAX",
+								"finalResult": 24,
+								"validRange": true,
+								"valueUser": 6,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 12,
+						"nameParameter": " Dureza total, ppm",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 10,
+								"unit": "PTTX",
+								"value": "67",
+								"codeValue": "MAX",
+								"finalResult": 0,
+								"validRange": true,
+								"valueUser": 0,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 15,
+						"nameParameter": "Sílice, ppm SiO2",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 78,
+								"unit": "TRD",
+								"value": "66",
+								"codeValue": "MIN",
+								"finalResult": 312,
+								"validRange": true,
+								"valueUser": 4,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 16,
+						"nameParameter": " Conductividad, us/cm",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 7,
+								"unit": "MM",
+								"value": "56",
+								"codeValue": "MIN",
+								"finalResult": 56,
+								"validRange": true,
+								"valueUser": 8,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 19,
+						"nameParameter": "S.T.D, ppm",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 40,
+								"unit": "YUT",
+								"value": "77",
+								"codeValue": "MAX",
+								"finalResult": 80,
+								"validRange": false,
+								"valueUser": 2,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 22,
+						"nameParameter": "Polímero, ppm",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 5,
+								"unit": "PTTX",
+								"value": "56",
+								"codeValue": "MIN",
+								"finalResult": 30,
+								"validRange": false,
+								"valueUser": 6,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 23,
+						"nameParameter": "Fosfatos, ppm PO4",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 5,
+								"unit": "TRD",
+								"value": "45",
+								"codeValue": "MAX",
+								"finalResult": 0,
+								"validRange": true,
+								"valueUser": 0,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 24,
+						"nameParameter": "Sulfitos, ppm SO3",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 54,
+								"unit": "MM",
+								"value": "45",
+								"codeValue": "MAX",
+								"finalResult": 216,
+								"validRange": false,
+								"valueUser": 4,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 25,
+						"nameParameter": "Hierro total, ppm ",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 4,
+								"unit": "PTUX",
+								"value": "56",
+								"codeValue": "MIN",
+								"finalResult": 32,
+								"validRange": false,
+								"valueUser": 8,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 26,
+						"nameParameter": "Cloruros, ppm Cl",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 34,
+								"unit": "mvs",
+								"value": "45",
+								"codeValue": "MAX",
+								"finalResult": 68,
+								"validRange": false,
+								"valueUser": 2,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 27,
+						"nameParameter": "Temperatura",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 1,
+								"unit": "°c",
+								"value": "50",
+								"codeValue": "MAX",
+								"finalResult": 6,
+								"validRange": true,
+								"valueUser": 6,
+								"isCompleted": true
+							}
+						]
+					}
+				]
+			}
+		],
+		"photos": [],
+		"descriptionsAndRecomendations": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\n",
+		"meditionsStock": []
+	},
+	{
+		"idPerson": 55,
+		"idSystem": 2,
+		"nameSystem": "Vapore",
+		"sampligpoints": [
+			{
+				"idSubsystem": 3,
+				"nameSubsystem": "subsistema tres",
+				"parameters": [
+					{
+						"idParameter": 4,
+						"nameParameter": " pH",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 1,
+								"unit": "PTTX",
+								"value": "45",
+								"codeValue": "MAX",
+								"finalResult": 1,
+								"validRange": true,
+								"valueUser": 1,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 6,
+								"nameSamplingpoint": "Punto de Muestreo 1",
+								"factor": 1,
+								"unit": "PTTX",
+								"value": "12",
+								"codeValue": "MAX",
+								"finalResult": 2,
+								"validRange": true,
+								"valueUser": 2,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 7,
+						"nameParameter": " ALK FENOL, ppm CaCO3",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 7,
+								"unit": "TRD",
+								"value": "56",
+								"codeValue": "MAX",
+								"finalResult": 28,
+								"validRange": true,
+								"valueUser": 4,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 6,
+								"nameSamplingpoint": "Punto de Muestreo 1",
+								"factor": 7,
+								"unit": "TRD",
+								"value": "23",
+								"codeValue": "MIN",
+								"finalResult": 35,
+								"validRange": true,
+								"valueUser": 5,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 8,
+						"nameParameter": " ALK TOTAL, ppm CaCO3",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 3,
+								"unit": "MM",
+								"value": "33",
+								"codeValue": "MIN",
+								"finalResult": 21,
+								"validRange": false,
+								"valueUser": 7,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 6,
+								"nameSamplingpoint": "Punto de Muestreo 1",
+								"factor": 3,
+								"unit": "MM",
+								"value": "25",
+								"codeValue": "MAX",
+								"finalResult": 24,
+								"validRange": true,
+								"valueUser": 8,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 10,
+						"nameParameter": " ALK OH, ppm CaCO3",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 4,
+								"unit": "YUT",
+								"value": "67",
+								"codeValue": "MAX",
+								"finalResult": 0,
+								"validRange": true,
+								"valueUser": 0,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 6,
+								"nameSamplingpoint": "Punto de Muestreo 1",
+								"factor": 4,
+								"unit": "YUT",
+								"value": "12,56",
+								"codeValue": "ENT",
+								"finalResult": 4,
+								"validRange": false,
+								"valueUser": 1,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 12,
+						"nameParameter": " Dureza total, ppm",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 10,
+								"unit": "PTTX",
+								"value": "67",
+								"codeValue": "MAX",
+								"finalResult": 30,
+								"validRange": true,
+								"valueUser": 3,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 6,
+								"nameSamplingpoint": "Punto de Muestreo 1",
+								"factor": 10,
+								"unit": "PTTX",
+								"value": "23",
+								"codeValue": "MAX",
+								"finalResult": 40,
+								"validRange": false,
+								"valueUser": 4,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 15,
+						"nameParameter": "Sílice, ppm SiO2",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 78,
+								"unit": "TRD",
+								"value": "66",
+								"codeValue": "MIN",
+								"finalResult": 468,
+								"validRange": true,
+								"valueUser": 6,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 6,
+								"nameSamplingpoint": "Punto de Muestreo 1",
+								"factor": 78,
+								"unit": "TRD",
+								"value": "35",
+								"codeValue": "MIN",
+								"finalResult": 546,
+								"validRange": true,
+								"valueUser": 7,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 16,
+						"nameParameter": " Conductividad, us/cm",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 6,
+								"nameSamplingpoint": "Punto de Muestreo 1",
+								"factor": 7,
+								"unit": "MM",
+								"value": "67",
+								"codeValue": "MAX",
+								"finalResult": 63,
+								"validRange": true,
+								"valueUser": 9,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 7,
+								"unit": "MM",
+								"value": "56",
+								"codeValue": "MIN",
+								"finalResult": 0,
+								"validRange": false,
+								"valueUser": 0,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 19,
+						"nameParameter": "S.T.D, ppm",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 40,
+								"unit": "YUT",
+								"value": "77",
+								"codeValue": "MAX",
+								"finalResult": 80,
+								"validRange": false,
+								"valueUser": 2,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 6,
+								"nameSamplingpoint": "Punto de Muestreo 1",
+								"factor": 40,
+								"unit": "YUT",
+								"value": "45",
+								"codeValue": "MIN",
+								"finalResult": 120,
+								"validRange": true,
+								"valueUser": 3,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 22,
+						"nameParameter": "Polímero, ppm",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 5,
+								"unit": "PTTX",
+								"value": "56",
+								"codeValue": "MIN",
+								"finalResult": 25,
+								"validRange": false,
+								"valueUser": 5,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 6,
+								"nameSamplingpoint": "Punto de Muestreo 1",
+								"factor": 5,
+								"unit": "PTTX",
+								"value": "34",
+								"codeValue": "MAX",
+								"finalResult": 30,
+								"validRange": true,
+								"valueUser": 6,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 23,
+						"nameParameter": "Fosfatos, ppm PO4",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 5,
+								"unit": "TRD",
+								"value": "45",
+								"codeValue": "MAX",
+								"finalResult": 40,
+								"validRange": true,
+								"valueUser": 8,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 6,
+								"nameSamplingpoint": "Punto de Muestreo 1",
+								"factor": 5,
+								"unit": "TRD",
+								"value": "23",
+								"codeValue": "MIN",
+								"finalResult": 45,
+								"validRange": true,
+								"valueUser": 9,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 24,
+						"nameParameter": "Sulfitos, ppm SO3",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 54,
+								"unit": "MM",
+								"value": "45",
+								"codeValue": "MAX",
+								"finalResult": 54,
+								"validRange": false,
+								"valueUser": 1,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 6,
+								"nameSamplingpoint": "Punto de Muestreo 1",
+								"factor": 54,
+								"unit": "MM",
+								"value": "34",
+								"codeValue": "MAX",
+								"finalResult": 108,
+								"validRange": false,
+								"valueUser": 2,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 25,
+						"nameParameter": "Hierro total, ppm ",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 4,
+								"unit": "PTUX",
+								"value": "56",
+								"codeValue": "MIN",
+								"finalResult": 16,
+								"validRange": false,
+								"valueUser": 4,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 6,
+								"nameSamplingpoint": "Punto de Muestreo 1",
+								"factor": 4,
+								"unit": "PTUX",
+								"value": "67,12",
+								"codeValue": "ENT",
+								"finalResult": 20,
+								"validRange": true,
+								"valueUser": 5,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 26,
+						"nameParameter": "Cloruros, ppm Cl",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 6,
+								"nameSamplingpoint": "Punto de Muestreo 1",
+								"factor": 34,
+								"unit": "mvs",
+								"value": "45",
+								"codeValue": "MAX",
+								"finalResult": 238,
+								"validRange": false,
+								"valueUser": 7,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 34,
+								"unit": "mvs",
+								"value": "45",
+								"codeValue": "MAX",
+								"finalResult": 272,
+								"validRange": false,
+								"valueUser": 8,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 27,
+						"nameParameter": "Temperatura",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 1,
+								"unit": "°c",
+								"value": "50",
+								"codeValue": "MAX",
+								"finalResult": 0,
+								"validRange": true,
+								"valueUser": 0,
+								"isCompleted": true
+							},
+							{
+								"idSamplingpoint": 6,
+								"nameSamplingpoint": "Punto de Muestreo 1",
+								"factor": 1,
+								"unit": "°c",
+								"value": "50",
+								"codeValue": "MAX",
+								"finalResult": 1,
+								"validRange": true,
+								"valueUser": 1,
+								"isCompleted": true
+							}
+						]
+					}
+				]
+			},
+			{
+				"idSubsystem": 5,
+				"nameSubsystem": "subsistema cuartro",
+				"parameters": [
+					{
+						"idParameter": 4,
+						"nameParameter": " pH",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 1,
+								"unit": "PTTX",
+								"value": "45",
+								"codeValue": "MAX",
+								"finalResult": 3,
+								"validRange": true,
+								"valueUser": 3,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 7,
+						"nameParameter": " ALK FENOL, ppm CaCO3",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 7,
+								"unit": "TRD",
+								"value": "56",
+								"codeValue": "MAX",
+								"finalResult": 42,
+								"validRange": true,
+								"valueUser": 6,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 8,
+						"nameParameter": " ALK TOTAL, ppm CaCO3",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 3,
+								"unit": "MM",
+								"value": "33",
+								"codeValue": "MIN",
+								"finalResult": 27,
+								"validRange": false,
+								"valueUser": 9,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 10,
+						"nameParameter": " ALK OH, ppm CaCO3",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 4,
+								"unit": "YUT",
+								"value": "67",
+								"codeValue": "MAX",
+								"finalResult": 8,
+								"validRange": true,
+								"valueUser": 2,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 12,
+						"nameParameter": " Dureza total, ppm",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 10,
+								"unit": "PTTX",
+								"value": "67",
+								"codeValue": "MAX",
+								"finalResult": 50,
+								"validRange": true,
+								"valueUser": 5,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 15,
+						"nameParameter": "Sílice, ppm SiO2",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 78,
+								"unit": "TRD",
+								"value": "66",
+								"codeValue": "MIN",
+								"finalResult": 624,
+								"validRange": true,
+								"valueUser": 8,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 16,
+						"nameParameter": " Conductividad, us/cm",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 7,
+								"unit": "MM",
+								"value": "56",
+								"codeValue": "MIN",
+								"finalResult": 7,
+								"validRange": false,
+								"valueUser": 1,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 19,
+						"nameParameter": "S.T.D, ppm",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 40,
+								"unit": "YUT",
+								"value": "77",
+								"codeValue": "MAX",
+								"finalResult": 160,
+								"validRange": false,
+								"valueUser": 4,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 22,
+						"nameParameter": "Polímero, ppm",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 5,
+								"unit": "PTTX",
+								"value": "56",
+								"codeValue": "MIN",
+								"finalResult": 35,
+								"validRange": false,
+								"valueUser": 7,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 23,
+						"nameParameter": "Fosfatos, ppm PO4",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 5,
+								"unit": "TRD",
+								"value": "45",
+								"codeValue": "MAX",
+								"finalResult": 0,
+								"validRange": true,
+								"valueUser": 0,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 24,
+						"nameParameter": "Sulfitos, ppm SO3",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 54,
+								"unit": "MM",
+								"value": "45",
+								"codeValue": "MAX",
+								"finalResult": 162,
+								"validRange": false,
+								"valueUser": 3,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 25,
+						"nameParameter": "Hierro total, ppm ",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 4,
+								"unit": "PTUX",
+								"value": "56",
+								"codeValue": "MIN",
+								"finalResult": 24,
+								"validRange": false,
+								"valueUser": 6,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 26,
+						"nameParameter": "Cloruros, ppm Cl",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 34,
+								"unit": "mvs",
+								"value": "45",
+								"codeValue": "MAX",
+								"finalResult": 306,
+								"validRange": false,
+								"valueUser": 9,
+								"isCompleted": true
+							}
+						]
+					},
+					{
+						"idParameter": 27,
+						"nameParameter": "Temperatura",
+						"samplingpoints": [
+							{
+								"idSamplingpoint": 8,
+								"nameSamplingpoint": "Punto de Muestreo 2",
+								"factor": 1,
+								"unit": "°c",
+								"value": "50",
+								"codeValue": "MAX",
+								"finalResult": 2,
+								"validRange": true,
+								"valueUser": 2,
+								"isCompleted": true
+							}
+						]
+					}
+				]
+			}
+		],
+		"photos": [],
+		"descriptionsAndRecomendations": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n\n",
+		"meditionsStock": []
+	}
+]
+}
