@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PDFController;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,7 +18,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
 
 Route::get('/view-template', function (Request $request) {
     // $novaJson = $request->novaJson;
