@@ -165,8 +165,10 @@
                                         @endforeach
                                         <td class="nv-bg-color-gray">
                                             @foreach ($p->samplingpoints as $key => $sp)
-                                                {{ $sp->nameSamplingpoint }}: {{ $sp->codeValue }} -
-                                                {{ $sp->value }}
+                                                <div class="col-sm-12">
+                                                    {{ $sp->nameSamplingpoint }}: {{ $sp->codeValue }} -
+                                                    {{ $sp->value }}
+                                                </div>
                                             @endforeach
                                         </td>
                                     @else
@@ -177,8 +179,10 @@
                                         @endforeach
                                         <td class="nv-bg-color-lightgray">
                                             @foreach ($p->samplingpoints as $key => $sp)
-                                                {{ $sp->nameSamplingpoint }}: {{ $sp->codeValue }} -
-                                                {{ $sp->value }}
+                                                <div class="col-sm-12">
+                                                    {{ $sp->nameSamplingpoint }}: {{ $sp->codeValue }} -
+                                                    {{ $sp->value }}
+                                                </div>
                                             @endforeach
                                         </td>
                                     @endif
@@ -195,6 +199,8 @@
                     </table>
                 </div>
             @endif
+            <br>
+            <br>
             <div class="nv-box-container2 text-bold">
                 @foreach ($subsystem->graphs as $g)
                     <div class="col-sm-4 text-center">
@@ -202,8 +208,7 @@
                             {{ $g->nameSamplingpoint }}
                         </div>
                         <div class="col-sm-12">
-                            {{ public_path($g->graph) }}
-                            <img src="{{ public_path($g->graph) }}" style="width: 100%">
+                            <img src="{{ public_path('\\storage\\' . $g->graph) }}" style="width: 100%">
                         </div>
                     </div>
                 @endforeach
@@ -218,6 +223,9 @@
             <div class="col-sm-10" style="margin-top: 7px; margin-left: 20px">
                 Conclusiones
             </div>
+            <div class="col-sm-12" style="text-align: justify">
+                {{ $system->conclusions }}
+            </div>
         </div>
         <br>
         <div class="nv-box-container2 text-bold"
@@ -227,6 +235,9 @@
             </div>
             <div class="col-sm-10" style="margin-top: 7px; margin-left: 20px">
                 Recomendaciones
+            </div>
+            <div class="col-sm-12" style="text-align: justify">
+                {{ $system->descriptionsAndRecomendations }}
             </div>
         </div>
         <div style="display:block; clear:both; page-break-after:always;"></div>
@@ -245,6 +256,127 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="nv-box-container text-bold">
+            @foreach ($system->meditionsStock as $stock)
+                <div class="col-sm-12 nv-bg-color-lightgray nv-text-color-purple box-height" style="margin-top: 50px">
+                    <div class="col-sm-12 nv-box-container text-bold" style="text-align: center">
+                        {{ strtoupper($stock->nameSubsystem) }}
+                    </div>
+                </div>
+                <div class="col-sm-12 text-bold" style="margin-top: 50px">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                @foreach ($stock->products as $key => $proH)
+                                    <th class="text-14pt">
+                                        <div>
+                                            <img src="{{ $badges[1] }}" class="box-pm">
+                                            <br>
+                                            {{ $proH->name }}
+                                        </div>
+                                    </th>
+                                @endforeach
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="nv-parameters text-bold">
+                                    <div
+                                        style="background: rgb(31, 78, 121); border-top-left-radius: 50px; border-bottom-left-radius: 50px; height: 50px;">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <div
+                                                    style="height: 40px; width: 40px; border-radius: 50px; background: white; margin-left: 5px; margin-top:5px">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-9" style="margin-top:15px">Stock de p roducto (Kg)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                @foreach ($stock->products as $key => $proR)
+                                    @if ($key % 2 == 0)
+                                        <td class="nv-bg-color-gray">{{ $proR->valueStock }}</td>
+                                    @else
+                                        <td class="nv-bg-color-lightgray">{{ $proR->valueStock }}</td>
+                                    @endif
+                                @endforeach
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td class="nv-parameters text-bold">
+                                    <div
+                                        style="background: rgb(31, 78, 121); border-top-left-radius: 50px; border-bottom-left-radius: 50px; height: 50px;">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <div
+                                                    style="height: 40px; width: 40px; border-radius: 50px; background: white; margin-left: 5px; margin-top:5px">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-9" style="margin-top:15px">Dosis químico (kg/día)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                @foreach ($stock->products as $key => $proR)
+                                    @if ($key % 2 == 0)
+                                        <td class="nv-bg-color-gray">{{ $proR->agreedDose }}</td>
+                                    @else
+                                        <td class="nv-bg-color-lightgray">{{ $proR->agreedDose }}</td>
+                                    @endif
+                                @endforeach
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td class="nv-parameters text-bold">
+                                    <div
+                                        style="background: rgb(31, 78, 121); border-top-left-radius: 50px; border-bottom-left-radius: 50px; height: 50px;">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <div
+                                                    style="height: 40px; width: 40px; border-radius: 50px; background: white; margin-left: 5px; margin-top:5px">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-9" style="margin-top:15px">Próximo despacho
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                @foreach ($stock->products as $key => $proR)
+                                    @if ($key % 2 == 0)
+                                        <td class="nv-bg-color-gray"></td>
+                                    @else
+                                        <td class="nv-bg-color-lightgray"></td>
+                                    @endif
+                                @endforeach
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            @endforeach
         </div>
 
     </div>
