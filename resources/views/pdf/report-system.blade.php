@@ -30,7 +30,7 @@
                 </p>
             </div>
         </div>
-        <div class="nv-box-container2 text-bold">
+        <div class="nv-box-container2" style="margin-top: 15px">
             <div class="mx-auto">
                 <div class="col-sm-12 nv-bg-color-gray nv-text-color-purple box-height">
                     <div class="col-sm-6">
@@ -39,10 +39,10 @@
                                 <img src="{{ $calendar }}">
                             </div>
                         </div>
-                        <div class="col-sm-3" style="margin-top: 7pt">
+                        <div class="col-sm-3 text-bold" style="margin-top: 7pt">
                             Fecha
                         </div>
-                        <div class="col-sm-6">{{ '2022-12-29 13:08' }}</div>
+                        <div class="col-sm-6 no-bold" style="margin-top: 7pt">{{ '2022-12-29 13:08' }}</div>
                     </div>
                     <div class="col-sm-6">
                         <div class="col-sm-3 nv-icon-box">
@@ -50,10 +50,10 @@
                                 <img src="{{ $send }}">
                             </div>
                         </div>
-                        <div class="col-sm-3" style="margin-top: 7pt">
+                        <div class="col-sm-3 text-bold" style="margin-top: 7pt">
                             Dirigido a
                         </div>
-                        <div class="col-sm-6">{{ '2022-12-29 13:08' }}</div>
+                        <div class="col-sm-6 no-bold" style="margin-top: 7pt">{{ '2022-12-29 13:08' }}</div>
                     </div>
                 </div>
                 <div class="col-sm-12 nv-bg-color-lightgray nv-text-color-purple box-height">
@@ -63,10 +63,10 @@
                                 <img src="{{ $building }}">
                             </div>
                         </div>
-                        <div class="col-sm-3" style="margin-top: 7pt">
+                        <div class="col-sm-3 text-bold" style="margin-top: 7pt">
                             Empresa
                         </div>
-                        <div class="col-sm-6">{{ '2022-12-29 13:08' }}</div>
+                        <div class="col-sm-6 no-bold" style="margin-top: 7pt">{{ '2022-12-29 13:08' }}</div>
                     </div>
                     <div class="col-sm-6">
                         <div class="col-sm-3 nv-icon-box">
@@ -74,10 +74,10 @@
                                 <img src="{{ $email }}">
                             </div>
                         </div>
-                        <div class="col-sm-3" style="margin-top: 7pt">
+                        <div class="col-sm-3 text-bold" style="margin-top: 7pt">
                             Copia a
                         </div>
-                        <div class="col-sm-6">{{ '2022-12-29 13:08' }}</div>
+                        <div class="col-sm-6 no-bold" style="margin-top: 7pt">{{ '2022-12-29 13:08' }}</div>
                     </div>
                 </div>
                 <div class="col-sm-12 nv-bg-color-gray nv-text-color-purple box-height">
@@ -87,10 +87,10 @@
                                 <img src="{{ $imgSystem }}">
                             </div>
                         </div>
-                        <div class="col-sm-3" style="margin-top: 7pt">
+                        <div class="col-sm-3 text-bold" style="margin-top: 7pt">
                             Sistema
                         </div>
-                        <div class="col-sm-6">{{ $system->nameSystem }}</div>
+                        <div class="col-sm-6 no-bold" style="margin-top: 7pt">{{ $system->nameSystem }}</div>
                     </div>
                     <div class="col-sm-6">
                         <div class="col-sm-3 nv-icon-box">
@@ -98,20 +98,20 @@
                                 <img src="{{ $email }}">
                             </div>
                         </div>
-                        <div class="col-sm-3" style="margin-top: 7pt">
+                        <div class="col-sm-3 text-bold" style="margin-top: 7pt">
                             Copia a
                         </div>
-                        <div class="col-sm-6">{{ '2022-12-29 13:08' }}</div>
+                        <div class="col-sm-6 no-bold" style="margin-top: 7pt">{{ '2022-12-29 13:08' }}</div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-sm-12">
+        <div class="col-sm-12" style="margin-top: 15px">
             <div class="nv-bg-color-purple nv-box-container-full" style="height: 5px;">
             </div>
         </div>
         @foreach ($system->subsystems as $subsystem)
-            <div class="row">
+            <div class="row" style="margin-top: 20px">
                 <div class="col-sm-12 nv-bg-color-lightgray nv-text-color-purple box-height">
                     <div class="col-sm-12 nv-box-container text-bold" style="text-align: center">
                         {{ strtoupper($subsystem->nameSubsystem) }}
@@ -119,13 +119,13 @@
                 </div>
             </div>
             @if (!empty($subsystem->parameters))
-                <div class="col-sm-12 text-bold">
+                <div class="col-sm-12" style="margin-top: 15px">
                     <table class="table">
                         <thead>
                             <tr>
                                 <th></th>
                                 @foreach ($subsystem->parameters[0]->samplingpoints as $key => $sp)
-                                    <th class="text-14pt">
+                                    <th class="text-14pt text-bold">
                                         <div>
                                             <img src="{{ $badges[$key] }}" class="box-pm">
                                             <br>
@@ -133,7 +133,7 @@
                                         </div>
                                     </th>
                                 @endforeach
-                                <th class="text-14pt">
+                                <th class="text-14pt text-bold">
                                     <img src="{{ $rangepm }}" class="box-pm">
                                     <br>
                                     Rango de control
@@ -145,7 +145,7 @@
                                 <tr>
                                     <td class="nv-parameters text-bold">
                                         <div
-                                            style="background: rgb(31, 78, 121); border-top-left-radius: 50px; border-bottom-left-radius: 50px; height: 50px;">
+                                            style="background: rgb(0, 102, 179); border-top-left-radius: 50px; border-bottom-left-radius: 50px; height: 50px;">
                                             <div class="row">
                                                 <div class="col-sm-3">
                                                     <div
@@ -159,11 +159,11 @@
                                     </td>
                                     @if ($key % 2 == 0)
                                         @foreach ($p->samplingpoints as $key => $sp)
-                                            <td class="nv-bg-color-gray">
+                                            <td class="nv-bg-color-gray text-center no-bold">
                                                 {{ $sp->finalResult }}
                                             </td>
                                         @endforeach
-                                        <td class="nv-bg-color-gray">
+                                        <td class="nv-bg-color-gray text-center no-bold">
                                             @foreach ($p->samplingpoints as $key => $sp)
                                                 <div class="col-sm-12">
                                                     {{ $sp->nameSamplingpoint }}: {{ $sp->codeValue }} -
@@ -173,11 +173,11 @@
                                         </td>
                                     @else
                                         @foreach ($p->samplingpoints as $key => $sp)
-                                            <td class="nv-bg-color-lightgray">
+                                            <td class="nv-bg-color-lightgray text-center no-bold">
                                                 {{ $sp->finalResult }}
                                             </td>
                                         @endforeach
-                                        <td class="nv-bg-color-lightgray">
+                                        <td class="nv-bg-color-lightgray text-center no-bold">
                                             @foreach ($p->samplingpoints as $key => $sp)
                                                 <div class="col-sm-12">
                                                     {{ $sp->nameSamplingpoint }}: {{ $sp->codeValue }} -
@@ -215,62 +215,66 @@
             </div>
             <div style="display:block; clear:both; page-break-after:always;"></div>
         @endforeach
-        <div class="nv-box-container2 text-bold"
-            style="border: 1px solid blue; height: 280px; padding-top: 20px; padding-bottom: 20px">
+        <div class="nv-box-container2"
+            style="border: 1px solid rgb(0, 102, 179); height: 280px; padding-top: 20px; padding-bottom: 20px">
             <div class="col-sm-1" style="text-align: right">
                 <img src="{{ $imgConclusion }}" width="35">
             </div>
-            <div class="col-sm-10" style="margin-top: 7px; margin-left: 20px">
+            <div class="col-sm-10 text-bold" style="margin-top: 7px; margin-left: 20px; color: rgb(0, 102, 179)">
                 Conclusiones
             </div>
-            <div class="col-sm-12" style="text-align: justify">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10" style="text-align: justify;">
                 {{ $system->conclusions }}
             </div>
+            <div class="col-sm-1"></div>
         </div>
         <br>
-        <div class="nv-box-container2 text-bold"
-            style="border: 1px solid blue; height: 280px; padding-top: 20px; padding-bottom: 20px">
+        <div class="nv-box-container2"
+            style="border: 1px solid rgb(0, 102, 179); height: 280px; padding-top: 20px; padding-bottom: 20px">
             <div class="col-sm-1" style="text-align: right">
                 <img src="{{ $imgRecomendacion }}" width="35">
             </div>
-            <div class="col-sm-10" style="margin-top: 7px; margin-left: 20px">
+            <div class="col-sm-10 text-bold" style="margin-top: 7px; margin-left: 20px; color: rgb(0, 102, 179)">
                 Recomendaciones
             </div>
-            <div class="col-sm-12" style="text-align: justify">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10" style="text-align: justify;">
                 {{ $system->descriptionsAndRecomendations }}
             </div>
+            <div class="col-sm-1"></div>
         </div>
         <div style="display:block; clear:both; page-break-after:always;"></div>
         <div class="nv-box-container text-bold">
             <div class="col-sm-5">
                 <div class="col-sm-3"
-                    style="height: 80px; background: blue;border-top-left-radius: 40px;border-bottom-left-radius: 40px; text-align: center">
+                    style="height: 80px; background: rgb(0, 102, 179);border-top-left-radius: 40px;border-bottom-left-radius: 40px; text-align: center">
                     <img src="{{ $imgProducto }}" width="50" style="margin-top: 15px">
                 </div>
                 <div class="col-sm-9 nv-bg-color-lightgray" style="height: 80px;">
                     <div class="col-sm-5" style="height: 10px;"></div>
-                    <div class="col-sm-7" style="background: rgba(0,0,255,0.7);height: 10px"></div>
-                    <div class="col-sm-8" style="color:blue;font-size: 26px; margin-left: 15px">
+                    <div class="col-sm-7" style="background: rgba(0, 102, 179,0.7);height: 10px"></div>
+                    <div class="col-sm-8" style="color:rgb(0, 102, 179);font-size: 26px; margin-left: 15px">
                         STOCK DE
                         PRODUCTOS
                     </div>
                 </div>
             </div>
         </div>
-        <div class="nv-box-container text-bold">
+        <div class="nv-box-container">
             @foreach ($system->meditionsStock as $stock)
                 <div class="col-sm-12 nv-bg-color-lightgray nv-text-color-purple box-height" style="margin-top: 50px">
                     <div class="col-sm-12 nv-box-container text-bold" style="text-align: center">
                         {{ strtoupper($stock->nameSubsystem) }}
                     </div>
                 </div>
-                <div class="col-sm-12 text-bold" style="margin-top: 50px">
+                <div class="col-sm-12" style="margin-top: 50px">
                     <table class="table">
                         <thead>
                             <tr>
                                 <th></th>
                                 @foreach ($stock->products as $key => $proH)
-                                    <th class="text-14pt">
+                                    <th class="text-14pt text-bold">
                                         <div>
                                             <img src="{{ $badges[1] }}" class="box-pm">
                                             <br>
@@ -284,7 +288,7 @@
                             <tr>
                                 <td class="nv-parameters text-bold">
                                     <div
-                                        style="background: rgb(31, 78, 121); border-top-left-radius: 50px; border-bottom-left-radius: 50px; height: 50px;">
+                                        style="background: rgb(0, 102, 179); border-top-left-radius: 50px; border-bottom-left-radius: 50px; height: 50px;">
                                         <div class="row">
                                             <div class="col-sm-3">
                                                 <div
@@ -298,9 +302,9 @@
                                 </td>
                                 @foreach ($stock->products as $key => $proR)
                                     @if ($key % 2 == 0)
-                                        <td class="nv-bg-color-gray">{{ $proR->valueStock }}</td>
+                                        <td class="nv-bg-color-gray text-center no-bold">{{ $proR->valueStock }}</td>
                                     @else
-                                        <td class="nv-bg-color-lightgray">{{ $proR->valueStock }}</td>
+                                        <td class="nv-bg-color-lightgray text-center no-bold">{{ $proR->valueStock }}</td>
                                     @endif
                                 @endforeach
                             </tr>
@@ -315,7 +319,7 @@
                             <tr>
                                 <td class="nv-parameters text-bold">
                                     <div
-                                        style="background: rgb(31, 78, 121); border-top-left-radius: 50px; border-bottom-left-radius: 50px; height: 50px;">
+                                        style="background: rgb(0, 102, 179); border-top-left-radius: 50px; border-bottom-left-radius: 50px; height: 50px;">
                                         <div class="row">
                                             <div class="col-sm-3">
                                                 <div
@@ -329,9 +333,9 @@
                                 </td>
                                 @foreach ($stock->products as $key => $proR)
                                     @if ($key % 2 == 0)
-                                        <td class="nv-bg-color-gray">{{ $proR->agreedDose }}</td>
+                                        <td class="nv-bg-color-gray text-center no-bold">{{ $proR->agreedDose }}</td>
                                     @else
-                                        <td class="nv-bg-color-lightgray">{{ $proR->agreedDose }}</td>
+                                        <td class="nv-bg-color-lightgray text-center no-bold">{{ $proR->agreedDose }}</td>
                                     @endif
                                 @endforeach
                             </tr>
@@ -346,7 +350,7 @@
                             <tr>
                                 <td class="nv-parameters text-bold">
                                     <div
-                                        style="background: rgb(31, 78, 121); border-top-left-radius: 50px; border-bottom-left-radius: 50px; height: 50px;">
+                                        style="background: rgb(0, 102, 179); border-top-left-radius: 50px; border-bottom-left-radius: 50px; height: 50px;">
                                         <div class="row">
                                             <div class="col-sm-3">
                                                 <div
@@ -360,9 +364,9 @@
                                 </td>
                                 @foreach ($stock->products as $key => $proR)
                                     @if ($key % 2 == 0)
-                                        <td class="nv-bg-color-gray"></td>
+                                        <td class="nv-bg-color-gray text-center no-bold"></td>
                                     @else
-                                        <td class="nv-bg-color-lightgray"></td>
+                                        <td class="nv-bg-color-lightgray text-center no-bold"></td>
                                     @endif
                                 @endforeach
                             </tr>

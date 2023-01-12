@@ -1,12 +1,19 @@
 @font-face {
     font-family: centurygothic;
-    src: url('../fonts/GOTHICB.TTF');
+    src: url("../fonts/GOTHICB.TTF");
+}
+@font-face {
+    font-family: centurygothicregular;
+    src: url("../fonts/GOTHIC.TTF");
 }
 .text-center {
     text-align: center;
 }
+.no-bold {
+    font-family: "centurygothicregular" !important;
+}
 body {
-    font-family: 'centurygothic' !important;
+    font-family: "centurygothic" !important;
 }
 td {
     border: 0px solid white;
@@ -79,7 +86,7 @@ table {
 }
 /* end text  */
 #title-pdf {
-    font-size: 24px;
+    font-size: 36px;
     color: rgb(30, 55, 99);
 }
 
