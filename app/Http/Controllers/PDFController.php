@@ -69,18 +69,23 @@ class PDFController extends Controller
             if (str_contains(strtolower($p->nameParameter), strtolower('Conductividad'))) {
                 $graph->nameSamplingpoint = $sp->nameSamplingpoint;
                 $graph->conductividad = $sp->finalResult;
+                $graph->validRange = $sp->validRange;
             }else if (str_contains(strtolower($p->nameParameter), strtolower('Temperatura'))) {
                 $graph->nameSamplingpoint = $sp->nameSamplingpoint;
                 $graph->temp = $sp->finalResult;
+                $graph->validRange = $sp->validRange;
             }else if (str_contains(strtolower($p->nameParameter), strtolower('Dureza'))) {
                 $graph->nameSamplingpoint = $sp->nameSamplingpoint;
                 $graph->dureza = $sp->finalResult;
+                $graph->validRange = $sp->validRange;
             }else if (str_contains(strtolower($p->nameParameter), strtolower('ALK TOTAL'))) {
                 $graph->nameSamplingpoint = $sp->nameSamplingpoint;
                 $graph->alk = $sp->finalResult;
+                $graph->validRange = $sp->validRange;
             }else if (str_contains(strtolower($p->nameParameter), strtolower('pH'))) {
                 $graph->nameSamplingpoint = $sp->nameSamplingpoint;
                 $graph->ph = $sp->finalResult;
+                $graph->validRange = $sp->validRange;
             } else {
                 continue;
             }
@@ -111,6 +116,7 @@ class PDFController extends Controller
             $g->graph = $this->generateGaugeChart($RSI);
             $objRyznar->samplingpoints[] = (object)[
                 "nameSamplingpoint" => $g->nameSamplingpoint,
+                "validRange" => $g->validRange,
                 "finalResult" => $RSI,
                 "value" => NULL,
                 "codeValue" => NULL,

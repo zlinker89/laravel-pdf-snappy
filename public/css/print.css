@@ -22,6 +22,12 @@ table {
     border-collapse: collapse;
 }
 /* backgrounds or colors  */
+.text-azul{
+    color: rgb(30, 55, 99);
+}
+.text-red{
+    color: rgba(240,44,37,1);
+}
 .nv-text-color-purple {
     color: rgb(30, 55, 99);
 }
@@ -61,7 +67,7 @@ table {
     height: 28px;
     vertical-align: middle;
     color: white;
-    width: 250px;
+    width: 280px;
 }
 .nv-label-parameter {
     width: 50pt !important;

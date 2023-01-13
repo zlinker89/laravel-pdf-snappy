@@ -125,7 +125,7 @@
                             <tr>
                                 <th></th>
                                 @foreach ($subsystem->parameters[0]->samplingpoints as $key => $sp)
-                                    <th class="text-14pt text-bold">
+                                    <th class="text-14pt text-bold text-azul">
                                         <div>
                                             <img src="{{ $badges[$key] }}" class="box-pm">
                                             <br>
@@ -133,11 +133,16 @@
                                         </div>
                                     </th>
                                 @endforeach
-                                <th class="text-14pt text-bold">
-                                    <img src="{{ $rangepm }}" class="box-pm">
-                                    <br>
-                                    Rango de control
-                                </th>
+                                @foreach ($subsystem->parameters[0]->samplingpoints as $key => $sp)
+                                    <th class="text-14pt text-bold text-azul">
+                                        <div>
+                                            <img src="{{ $rangepm }}" class="box-pm">
+                                            <br>
+                                            Rango de control <br>
+                                            {{ $sp->nameSamplingpoint }}
+                                        </div>
+                                    </th>
+                                @endforeach
                             </tr>
                         </thead>
                         <tbody>
@@ -159,32 +164,34 @@
                                     </td>
                                     @if ($key % 2 == 0)
                                         @foreach ($p->samplingpoints as $key => $sp)
-                                            <td class="nv-bg-color-gray text-center no-bold">
-                                                {{ $sp->finalResult }}
+                                            <td class="nv-bg-color-gray text-center no-bold text-azul">
+                                                <div @class(['text-red' => !$sp->validRange, 'text-azul' => $sp->validRange])>
+                                                    {{ $sp->finalResult }}
+                                                </div>
                                             </td>
                                         @endforeach
-                                        <td class="nv-bg-color-gray text-center no-bold">
-                                            @foreach ($p->samplingpoints as $key => $sp)
-                                                <div class="col-sm-12">
-                                                    {{ $sp->nameSamplingpoint }}: {{ $sp->codeValue }} -
-                                                    {{ $sp->value }}
+                                        @foreach ($p->samplingpoints as $key => $sp)
+                                            <td class="nv-bg-color-lightgray text-center no-bold">
+                                                <div class="text-azul">
+                                                    {{ strtolower($sp->codeValue) }} {{ $sp->value }}
                                                 </div>
-                                            @endforeach
-                                        </td>
+                                            </td>
+                                        @endforeach
                                     @else
                                         @foreach ($p->samplingpoints as $key => $sp)
                                             <td class="nv-bg-color-lightgray text-center no-bold">
-                                                {{ $sp->finalResult }}
+                                                <div @class(['text-red' => !$sp->validRange, 'text-azul' => $sp->validRange])>
+                                                    {{ $sp->finalResult }}
+                                                </div>
                                             </td>
                                         @endforeach
-                                        <td class="nv-bg-color-lightgray text-center no-bold">
-                                            @foreach ($p->samplingpoints as $key => $sp)
-                                                <div class="col-sm-12">
-                                                    {{ $sp->nameSamplingpoint }}: {{ $sp->codeValue }} -
-                                                    {{ $sp->value }}
+                                        @foreach ($p->samplingpoints as $key => $sp)
+                                            <td class="nv-bg-color-lightgray text-center no-bold">
+                                                <div class="text-azul">
+                                                    {{ strtolower($sp->codeValue) }} {{ $sp->value }}
                                                 </div>
-                                            @endforeach
-                                        </td>
+                                            </td>
+                                        @endforeach
                                     @endif
                                 </tr>
                                 <tr>
@@ -224,7 +231,7 @@
                 Conclusiones
             </div>
             <div class="col-sm-1"></div>
-            <div class="col-sm-10" style="text-align: justify;">
+            <div class="col-sm-10 text-azul" style="text-align: justify; margin-top: 25px">
                 {{ $system->conclusions }}
             </div>
             <div class="col-sm-1"></div>
@@ -239,7 +246,7 @@
                 Recomendaciones
             </div>
             <div class="col-sm-1"></div>
-            <div class="col-sm-10" style="text-align: justify;">
+            <div class="col-sm-10 text-azul" style="text-align: justify; margin-top: 25px">
                 {{ $system->descriptionsAndRecomendations }}
             </div>
             <div class="col-sm-1"></div>
@@ -274,7 +281,7 @@
                             <tr>
                                 <th></th>
                                 @foreach ($stock->products as $key => $proH)
-                                    <th class="text-14pt text-bold">
+                                    <th class="text-14pt text-bold text-azul">
                                         <div>
                                             <img src="{{ $badges[1] }}" class="box-pm">
                                             <br>
@@ -302,9 +309,10 @@
                                 </td>
                                 @foreach ($stock->products as $key => $proR)
                                     @if ($key % 2 == 0)
-                                        <td class="nv-bg-color-gray text-center no-bold">{{ $proR->valueStock }}</td>
+                                        <td class="nv-bg-color-gray text-center no-bold text-azul">{{ $proR->valueStock }}</td>
                                     @else
-                                        <td class="nv-bg-color-lightgray text-center no-bold">{{ $proR->valueStock }}</td>
+                                        <td class="nv-bg-color-lightgray text-center no-bold text-azul">{{ $proR->valueStock }}
+                                        </td>
                                     @endif
                                 @endforeach
                             </tr>
@@ -333,9 +341,10 @@
                                 </td>
                                 @foreach ($stock->products as $key => $proR)
                                     @if ($key % 2 == 0)
-                                        <td class="nv-bg-color-gray text-center no-bold">{{ $proR->agreedDose }}</td>
+                                        <td class="nv-bg-color-gray text-center no-bold text-azul">{{ $proR->agreedDose }}</td>
                                     @else
-                                        <td class="nv-bg-color-lightgray text-center no-bold">{{ $proR->agreedDose }}</td>
+                                        <td class="nv-bg-color-lightgray text-center no-bold text-azul">{{ $proR->agreedDose }}
+                                        </td>
                                     @endif
                                 @endforeach
                             </tr>
@@ -364,9 +373,9 @@
                                 </td>
                                 @foreach ($stock->products as $key => $proR)
                                     @if ($key % 2 == 0)
-                                        <td class="nv-bg-color-gray text-center no-bold"></td>
+                                        <td class="nv-bg-color-gray text-center no-bold text-azul"></td>
                                     @else
-                                        <td class="nv-bg-color-lightgray text-center no-bold"></td>
+                                        <td class="nv-bg-color-lightgray text-center no-bold text-azul"></td>
                                     @endif
                                 @endforeach
                             </tr>
