@@ -349,9 +349,10 @@ class PDFController extends Controller
             $systemObj->urlPDF = $this->generatePDF($system);
             $pdfs[] = $systemObj;
         }
-        return Response::make(file_get_contents($pdfs[0]->urlPDF), 200, [
-            'content-type' => 'application/pdf',
-        ]);
+        // return Response::make(file_get_contents($pdfs[0]->urlPDF), 200, [
+        //     'content-type' => 'application/pdf',
+        // ]);
+        return response()->json($pdfs, 200);
     }
     public function browserShot(Request $request)
     {
