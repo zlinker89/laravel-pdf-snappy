@@ -124,22 +124,22 @@
                         <thead>
                             <tr>
                                 <th></th>
-                                @foreach ($subsystem->parameters[0]->samplingpoints as $key => $sp)
+                                @foreach ($subsystem->headers as $key => $sp)
                                     <th class="text-14pt text-bold text-azul">
                                         <div>
                                             <img src="{{ $badges[$key] }}" class="box-pm">
                                             <br>
-                                            {{ $sp->nameSamplingpoint }}
+                                            {{ $sp }}
                                         </div>
                                     </th>
                                 @endforeach
-                                @foreach ($subsystem->parameters[0]->samplingpoints as $key => $sp)
+                                @foreach ($subsystem->headers as $key => $sp)
                                     <th class="text-14pt text-bold text-azul">
                                         <div>
                                             <img src="{{ $rangepm }}" class="box-pm">
                                             <br>
                                             Rango de control <br>
-                                            {{ $sp->nameSamplingpoint }}
+                                            {{ $sp }}
                                         </div>
                                     </th>
                                 @endforeach
@@ -391,7 +391,18 @@
                 </div>
             @endforeach
         </div>
-
+        <div class="col-sm-12" style="height: 80px;">
+        </div>
+        <div class="nv-box-container">
+            <div class="col-sm-5 text-bold text-azul">
+                Firma del técnico
+            </div>
+            <div class="col-sm-5 text-bold text-azul" style="margin-left: 50px">
+                Firma quien recibe
+            </div>
+            <div class="col-sm-5" style="height: 120px; border-bottom: 1px solid black"></div>
+            <div class="col-sm-5" style="height: 120px; border-bottom: 1px solid black; margin-left: 50px"></div>
+        </div>
     </div>
 </body>
 
