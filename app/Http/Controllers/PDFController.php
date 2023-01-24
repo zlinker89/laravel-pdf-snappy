@@ -585,8 +585,8 @@ class PDFController extends Controller
             }
         }
         $PI = pi();
-        $maxIR = 10;
-        $numIR = 10 - $indiceRyznar;
+        $numIR = abs(10 - $indiceRyznar);
+        $maxIR = abs(10 - $numIR);
         $chart = new QuickChart(array(
             'width' => 400,
             'height' => 200
@@ -597,7 +597,7 @@ class PDFController extends Controller
             'data' => [
                 'datasets' => [(object)[
                     'label' => 'foo',
-                    'data' => [$numIR, $maxIR],
+                    'data' => [$maxIR, $numIR],
                     'backgroundColor' => [
                         $color,
                         'rgba(217, 217, 217, 1)'

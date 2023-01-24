@@ -17,7 +17,7 @@
             </div>
             <div class="col-sm-6 text-center text-bold">
                 <div class="col-sm-12 text-12pt" style="height: 40pt">
-                    <p>CONSECUTIVO 481345</p>
+                    <p>CONSECUTIVO {{ $system->idVisit }}</p>
                 </div>
                 <div class="col-sm-12 nv-text-color-purple" id="title-pdf">
                     <p>ANÁLISIS FISICOQUÍMICO DE AGUA</p>
@@ -42,9 +42,9 @@
                         <div class="col-sm-3 text-bold" style="margin-top: 7pt">
                             Fecha
                         </div>
-                        <div class="col-sm-6 no-bold" style="margin-top: 7pt">{{ '2022-12-29 13:08' }}</div>
+                        <div class="col-sm-6 no-bold" style="margin-top: 7pt">{{ $system->dateVisit }}</div>
                     </div>
-                    <div class="col-sm-6">
+                    {{-- <div class="col-sm-6">
                         <div class="col-sm-3 nv-icon-box">
                             <div class="col-sm-offset-5" style="margin-top: 7pt">
                                 <img src="{{ $send }}">
@@ -54,7 +54,7 @@
                             Dirigido a
                         </div>
                         <div class="col-sm-6 no-bold" style="margin-top: 7pt">{{ '2022-12-29 13:08' }}</div>
-                    </div>
+                    </div> --}}
                 </div>
                 <div class="col-sm-12 nv-bg-color-lightgray nv-text-color-purple box-height">
                     <div class="col-sm-6">
@@ -66,9 +66,9 @@
                         <div class="col-sm-3 text-bold" style="margin-top: 7pt">
                             Empresa
                         </div>
-                        <div class="col-sm-6 no-bold" style="margin-top: 7pt">{{ '2022-12-29 13:08' }}</div>
+                        <div class="col-sm-6 no-bold" style="margin-top: 7pt">{{ $system->client }}</div>
                     </div>
-                    <div class="col-sm-6">
+                    {{-- <div class="col-sm-6">
                         <div class="col-sm-3 nv-icon-box">
                             <div class="col-sm-offset-5" style="margin-top: 7pt">
                                 <img src="{{ $email }}">
@@ -78,7 +78,7 @@
                             Copia a
                         </div>
                         <div class="col-sm-6 no-bold" style="margin-top: 7pt">{{ '2022-12-29 13:08' }}</div>
-                    </div>
+                    </div> --}}
                 </div>
                 <div class="col-sm-12 nv-bg-color-gray nv-text-color-purple box-height">
                     <div class="col-sm-6">
@@ -92,7 +92,7 @@
                         </div>
                         <div class="col-sm-6 no-bold" style="margin-top: 7pt">{{ $system->nameSystem }}</div>
                     </div>
-                    <div class="col-sm-6">
+                    {{-- <div class="col-sm-6">
                         <div class="col-sm-3 nv-icon-box">
                             <div class="col-sm-offset-5" style="margin-top: 7pt">
                                 <img src="{{ $email }}">
@@ -102,7 +102,7 @@
                             Copia a
                         </div>
                         <div class="col-sm-6 no-bold" style="margin-top: 7pt">{{ '2022-12-29 13:08' }}</div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
